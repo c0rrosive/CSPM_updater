@@ -1,8 +1,8 @@
 import boto3
 
-stack_name = 'cutdowntest'
-stackset_name = 'cutdownstackset'
-AWS_OU = 'r-emby'
+stack_name = 'STACK_NAME
+stackset_name = 'stacksetNAME'
+AWS_OU = 'ORG_OU'
 cloudformation_client = boto3.client('cloudformation')
 
 def get_stack_params():
