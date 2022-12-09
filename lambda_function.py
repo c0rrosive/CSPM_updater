@@ -1,6 +1,6 @@
 import boto3
 
-stack_name = 'STACK_NAME
+stack_name = 'STACK_NAME'
 stackset_name = 'stacksetNAME'
 AWS_OU = 'ORG_OU'
 cloudformation_client = boto3.client('cloudformation')
@@ -32,7 +32,7 @@ def update_stack():
 
 def update_stackset():
     cloudformation_client.update_stack_set(
-        StackSetName='cutdownstackset',
+        StackSetName=stackset_name,
         TemplateURL='https://redlock-public.s3.amazonaws.com/cft/rl-read-and-write-member.template',
         UsePreviousTemplate=False,
         Parameters=stackset_params,
